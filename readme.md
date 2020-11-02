@@ -6,5 +6,4 @@ This is an example of Twitter app
 2. here is the second
 3. and third
 
-
-![](Pic1.png?raw=true)
+<img src="Pic1.png" width="800" />
