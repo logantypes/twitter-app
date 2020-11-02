@@ -6,5 +6,9 @@ This is an example of Twitter app
 2. here is the second
 3. and third
 
+Let's see the emojii usage
+
+:alien:
+
 
 ![GitHub Logo](/Pic1.PNG)
