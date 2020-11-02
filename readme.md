@@ -12,3 +12,6 @@ Let's see the emojii usage
 
 
 ![GitHub Logo](/Pic1.PNG)
+
+
+![GitHub Logo](/Pic2.PNG)
