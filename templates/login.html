@@ -1,0 +1,27 @@
+
+{% extends "index.html" %}
+{% block content %}
+<br>
+<br>
+<form  method="post">
+  <div class="form-group">
+    
+      {{ form.hidden_tag() }}
+    
+      {{ form.username.label }} {{ form.username() }}
+      <br>
+      {{ form.password.label }} {{ form.password() }}
+      <br>
+      <br>
+    
+      {{ form.submit_button() }}
+    
+  </div>
+</form>
+<br>
+
+<p><a href="{{ url_for('register') }}" class="badge badge-info" >Register</a></p>
+
+
+
+{% endblock %}

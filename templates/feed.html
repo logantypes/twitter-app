@@ -1,0 +1,30 @@
+
+
+
+
+
+{% extends "index.html" %}
+{% block content %}
+<br>
+<br>
+<h1>Post Flow</h1>
+{% for index, row in posts_df.iterrows() %}
+<div class="card-deck">
+ 
+      <div class="card border-primary mb-3" style="width: 18rem;">
+        <h3>Post No. {{ index+1 }}:</h3>
+        <p>Date: {{ row['date_created'] }}</p>
+        <p>Title: {{ row['name'] }}</p>
+        <p>{{ row['description'] }}</p>
+        
+        {% for i in range(users_df|length)  %}
+            {%if users_df.loc[i, "id"]== row['user_id'] %}        
+                <p>Posted by user:</p><p><a href={{ url_for('profile', username=users_df.loc[i, "username"]) }} class="badge badge-info">{{users_df.loc[i, "username"]}}</a></p>
+            {% endif %}    
+        {% endfor %}
+        
+       
+  </div>
+ </div>
+{% endfor %}
+{% endblock %}

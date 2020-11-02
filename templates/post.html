@@ -1,0 +1,29 @@
+
+
+
+{% extends "index.html" %}
+{% block content %}
+
+
+<br>
+<br>
+
+
+<form  method="post">
+  {{ form.hidden_tag() }}
+
+  {{ form.item_name.label }} {{ form.item_name() }}
+  <br>
+  
+  {{ form.description.label }} 
+  <br>
+  {{ form.description(id="larger") }}
+     
+  
+  <br>
+
+  {{ form.submit_button() }}
+
+</form>
+
+{% endblock %}
