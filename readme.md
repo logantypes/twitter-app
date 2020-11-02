@@ -9,3 +9,4 @@ This is an example of Twitter app
 <img src="Pic1.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
+![](Pic1.png?raw=true)
